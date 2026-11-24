@@ -39,6 +39,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: ARIX-SCREEN-SHARING-BLACK-GOLD-debug-apk
+          name: ARIX-SCREEN-SHARING-REMOTE-CONTROL-debug-apk
           path: ARIX_SCREEN_SHARING/android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
