@@ -13,7 +13,7 @@ jobs:
 
       - name: Extract Phase 5 source
         run: |
-          unzip -q ARIX_SCREEN_SHARING_PHASE5.zip
+          unzip -oq ARIX_SCREEN_SHARING_PHASE5.zip
           test -f ARIX_SCREEN_SHARING/android/gradlew
 
       - name: Set up Java
