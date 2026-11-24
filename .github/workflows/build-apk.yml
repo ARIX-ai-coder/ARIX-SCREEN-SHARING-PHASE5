@@ -13,7 +13,7 @@ jobs:
 
       - name: Extract redesigned source
         run: |
-          unzip -oq ARIX_SCREEN_SHARING_BLACK_GOLD_SOURCE.zip
+         unzip -oq ARIX_SCREEN_SHARING_REMOTE_CONTROL_SOURCE.zip
           test -f ARIX_SCREEN_SHARING/android/gradlew
 
       - name: Set up Java
