@@ -11,9 +11,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Extract Phase 5 source
+      - name: Extract redesigned source
         run: |
-          unzip -oq ARIX_SCREEN_SHARING_PHASE5.zip
+          unzip -oq ARIX_SCREEN_SHARING_BLACK_GOLD_SOURCE.zip
           test -f ARIX_SCREEN_SHARING/android/gradlew
 
       - name: Set up Java
@@ -39,6 +39,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: ARIX-SCREEN-SHARING-PHASE5-debug-apk
+          name: ARIX-SCREEN-SHARING-BLACK-GOLD-debug-apk
           path: ARIX_SCREEN_SHARING/android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
