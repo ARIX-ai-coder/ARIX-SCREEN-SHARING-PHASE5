@@ -7,7 +7,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends unzip \
     && rm -rf /var/lib/apt/lists/*
 
-COPY ARIX_SCREEN_SHARING_PHASE5.zip /tmp/arix-source.zip
+COPY ARIX_SCREEN_SHARING_REMOTE_CONTROL_SOURCE.zip /tmp/arix-source.zip
 RUN unzip -q /tmp/arix-source.zip -d /app \
     && rm /tmp/arix-source.zip \
     && pip install --no-cache-dir -r /app/ARIX_SCREEN_SHARING/backend/requirements.txt
